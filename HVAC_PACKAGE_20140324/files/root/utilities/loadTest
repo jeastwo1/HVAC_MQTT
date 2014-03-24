@@ -1,0 +1,6 @@
+#!/bin/bash
+echo hello
+sudo echo "i 0x031c e" >/dev/pcanusb1
+ifconfig can0 up
+cangen -g 100 -L 8 -I 0x4BD can0
+

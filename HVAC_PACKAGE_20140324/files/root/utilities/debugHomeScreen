@@ -1,0 +1,8 @@
+#!/bin/sh
+wrt-launcher -k intelPoc10.HomeScreen
+while wrt-launcher --is-running intelPoc10.HomeScreen ; do
+    echo "Waiting for intelPoc10.HomeScreen to exit."
+    sleep 1
+done
+wrt-launcher --debug -s intelPoc10.HomeScreen
+

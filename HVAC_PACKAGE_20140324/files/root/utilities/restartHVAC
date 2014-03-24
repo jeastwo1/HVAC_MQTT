@@ -1,0 +1,8 @@
+#!/bin/sh
+wrt-launcher -k intelPoc16.HVAC
+while wrt-launcher --is-running intelPoc16.HVAC ; do
+    echo "Waiting for intelPoc16.HVAC to exit."
+    sleep 1
+done
+wrt-launcher -s intelPoc16.HVAC
+

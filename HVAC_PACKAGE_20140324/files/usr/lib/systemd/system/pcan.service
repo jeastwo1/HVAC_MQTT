@@ -1,0 +1,11 @@
+[Unit]
+Description=PCAN interface
+After=network.target
+
+[Service]
+ExecStart=/usr/lib/systemd/system/pcan.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=basic.target

@@ -1,0 +1,41 @@
+{
+    "sources" : [
+    /* {
+        "name" : "Wheel",
+        "path" : "/usr/lib/automotive-message-broker/wheelsourceplugin.__DISABLED__.so"
+    }, */
+    /* { / * Enable the generated plugin * /
+        "name" : "T5","path":"/usr/lib/automotive-message-broker/t5_12my_hs_can_plugin.so",
+        "interface" : "can1",
+        "announcementIntervalTimer" : "4000",
+        "announcementCount" : 400000
+    }, */
+    { /* Enable the (new) generated plugin */
+        "name" : "T5-MS","path":"/usr/lib/automotive-message-broker/t5_12my_ms_can_plugin.so",
+        "interface" : "can0",
+        "announcementIntervalTimer" : "4000",
+        "announcementCount" : 400000,
+        /* "limitPrinting" : true,*/
+        /* "useMessageSubset" : true */
+    }, 
+    /* Disable for now...   /*  {
+        "name" : "CANSimPlugin",
+        "path":"/usr/lib/automotive-message-broker/cansimplugin.so",
+        "interfaces" : ["vcan0", "vcan1"]
+    }, */
+    /* Disable for now...   /*  {
+        "name" : "CANGenPlugin","path":"/usr/lib/automotive-message-broker/cangenplugin.so"
+    }, */
+    ],
+    "sinks": [
+    {
+        "name" : "DBusSink",
+        "path" : "/usr/lib/automotive-message-broker/dbussinkplugin.so"
+    },
+    /* {
+        "name" : "WebSocketSink",
+        "path" : "/usr/lib/automotive-message-broker/websocketsinkplugin.so",
+        "interface" : "any"
+    } */
+    ]
+}

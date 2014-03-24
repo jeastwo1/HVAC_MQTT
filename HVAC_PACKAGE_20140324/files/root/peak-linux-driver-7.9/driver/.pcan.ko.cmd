@@ -1,0 +1,1 @@
+cmd_/root/peak-linux-driver-7.9/driver/pcan.ko := ld -r -m elf_i386 -T /usr/src/kernels/3.12.4-10.1-x86-ivi/scripts/module-common.lds --build-id  -o /root/peak-linux-driver-7.9/driver/pcan.ko /root/peak-linux-driver-7.9/driver/pcan.o /root/peak-linux-driver-7.9/driver/pcan.mod.o
