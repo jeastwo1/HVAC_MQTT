@@ -1,0 +1,3 @@
+[submodule "can-utils"]
+	path = can-utils
+	url = ./HVAC_PACKAGE_20140324/files/root/can-utils/
