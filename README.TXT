@@ -28,7 +28,7 @@ unzips are not able to handle symbolic links.)
 Cd into the HVAC_PACKAGE_20140324 directory and execute the "install.sh" script file.
 It should run without error.
 
-Plus a Peak canbus interface into USB0 (lower USB jack on the front of the NDIS box)
+Plug a Peak canbus interface into USB0 (lower USB jack on the front of the NDIS box)
 and reboot the computer.  If all is well, the red LED on the canbus interface will
 flash slowly (about once a second).
 
