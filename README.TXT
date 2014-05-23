@@ -7,9 +7,8 @@ executing:
 	git submodule init
 	git submodule update
 
-from within the HVAC_PACKAGE_20140324/files/root/can-utils directory structure.  If you
-fail to perform these two commands, you'll find that the HVAC_PACKAGE_20140324/files/root/can-utils
-directory is empty!
+from within the repository.  If you fail to perform these two commands, you'll find 
+that the HVAC_PACKAGE_20140324/files/root/can-utils directory is empty!
 
 ALso, please note that modifications to this subproject are separately maintained and
 must be updated outside the main repository (e.g., updates, commits, etc to can-utils
